@@ -1,0 +1,59 @@
+.Body {
+  height: 75vh;
+  width: 25vw;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 15px;
+}
+
+.Display {
+  height: 12rem;
+  width: 100%;
+  background: #eafff80d;
+  border-radius: 1rem;
+}
+
+.Button {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10rem;
+
+  &:hover {
+    background-color: #415c754f;
+  }
+
+  &Equals {
+    grid-column: 3 / 5;
+    background: transparent;
+
+    &:hover {
+      background-color: #fa5e426b;
+    }
+  }
+
+  &Box {
+    width: 95%;
+    height: calc(100% - 14rem);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+
+.Result {
+  font-size: 70px;
+  text-align: right;
+  padding: 6px;
+}
+
+
